@@ -1,5 +1,39 @@
 #wrapper{
+    width: 1480px;
     display: flex;
     flex-direction: column;
-    width: 1728px;
+}
+/* #div1{
+    width: 1480px;
+    height: 710px;
+    background-color: #b5caee;
+} */
+#div1 {
+    width: 1480px;
+    height: 80px;
+    background-color: #6DBDFB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo {
+    width: 150px;
+    height: 80px;
+}
+
+#menu {
+    width: 600px;
+    height: 55px;
+    background-color: #B5CAEE;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-menu {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
