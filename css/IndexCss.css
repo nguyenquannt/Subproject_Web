@@ -1,17 +1,18 @@
-#wrapper{
+#wrapper {
     width: 1480px;
     display: flex;
     flex-direction: column;
 }
-/* #div1{
+/* div1 */
+#div1 {
     width: 1480px;
     height: 710px;
     background-color: #b5caee;
-} */
-#div1 {
+}
+
+#head {
     width: 1480px;
-    height: 80px;
-    background-color: #6DBDFB;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,4 +37,121 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+#banner {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f2d8b9;
+    margin: auto;
+}
+
+.img-prev {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#text {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.small-text {
+    margin-top: -20px;
+    width: 800px;
+    font-size: 26px;
+}
+
+#btn-banner {
+    padding-top: 20px;
+    display: flex;
+}
+
+.btn-more {
+    width: 110px;
+    height: 40px;
+    background-color: #F2D8B9;
+    border: 0px;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-contact {
+    margin-left: 50px;
+    width: 110px;
+    height: 40px;
+    background-color: #252525;
+    border: 0px;
+    color: white;
+    font-size: 16px;
+}
+
+.img-next {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f2d8b9;
+    margin: auto;
+}
+/* div2 */
+#div2{
+    width: 1480px;
+    height: 550px;
+    position: relative;
+}
+.img-div2{
+    height: 550px;
+}
+#div2-main{
+    display: flex;
+    position: relative;
+}
+.main-left{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin-top: -440px;
+    margin-left: 250px;
+}
+.ml-big-text{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.ml-small-text{
+    font-size: 20px;
+}
+.ml-btn{
+    color: white;
+    background-color: #252525;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+}
+.img-right{
+    position: absolute;
+    width: 380px;
+    height: 440px;
+    margin-top: -500px;
+    margin-left: 950px;
 }
