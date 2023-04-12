@@ -251,3 +251,91 @@
 .text-prd {
     padding-left: 60px;
 }
+
+/* div4 */
+#div4 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 100px;
+    height: 480px;
+}
+
+.div4-r1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.div4-r2 {
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div4-r3 {
+    padding-top: 20px;
+    display: flex;
+}
+
+.r3-left {
+    width: 740px;
+    /* 50% độ dài màn hình */
+    display: flex;
+    align-items: center;
+}
+
+.r3-right {
+    width: 740px;
+    /* 50% độ dài màn hình */
+    display: flex;
+    align-items: center;
+}
+
+.r3-left-text {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.rlt-1 {
+    color: #6DBDFB;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.rlt-2 {
+    margin-top: -10px;
+    width: 450px;
+    font-size: 20px;
+}
+/* div5 */
+#div5{
+    height: 250px;
+    background-color: #C1DCF9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.div5-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div5-txt{
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+/* div6 */
+#div6{
+    background-color: #252525;
+    height: 60px;
+}
+.txt-end{
+    color: white;
+    text-align: center;
+    
+}
