@@ -1,7 +1,12 @@
-#{
-    margin: 0;
-    padding: 0;
+#con {
+    width: 1480px;
 }
+
+#banner {
+    width: 1480px;
+    margin-left: -14px;
+}
+
 .logo {
     width: 150px;
     height: 80px;
@@ -9,15 +14,69 @@
     margin-top: -280px;
     margin-left: 20px;
 }
+
 /* list product 1 */
-#list-product-1{
+#product-list {
     background-color: #6DBDFB;
     height: 400px;
-    width: 1480px;
 }
-#pd1{
-    width: 280px;
+
+#pd1 {
+    width: 270px;
     height: 350px;
+    border: 1px solid gray;
     background-color: #C1DCF9;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.money-product {
+    margin-top: -10px;
+    font-size: 25px;
+}
+
+#prev-next-list1 {
+    padding-top: 520px;
+    margin-left: -10px;
+    width: 1470px;
+}
+
+.btn-l1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: #F2D8B9;
+}
+
+/* list2 */
+#product-list2 {
+    background-color: #6DBDFB;
+    height: 400px;
+}
+
+#pd2 {
+    width: 270px;
+    height: 350px;
+    border: 1px solid gray;
+    background-color: #C1DCF9;
+    border-radius: 20px;
+}
+
+#prev-next-list2 {
+    padding-top: 1000px;
+    margin-left: -10px;
+    width: 1470px;
+}
+
+.btn-l2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: #F2D8B9;
+}
+
+/* footer */
+#footer {
+    margin-left: -15px;
+    width: 1480px;
+    height: 300px;
 }
