@@ -6,6 +6,18 @@
     width: 150px;
     height: 80px;
     position: absolute;
-    margin-top: -430px;
+    margin-top: -280px;
     margin-left: 20px;
+}
+/* list product 1 */
+#list-product-1{
+    background-color: #6DBDFB;
+    height: 400px;
+    width: 1480px;
+}
+#pd1{
+    width: 280px;
+    height: 350px;
+    background-color: #C1DCF9;
+    border-radius: 10px;
 }
