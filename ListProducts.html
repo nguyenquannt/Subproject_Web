@@ -13,6 +13,16 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
+    <style>
+        .ip{
+            width: 275px;
+            height: 50px;
+        }
+        .end{
+            margin-top: -70px;
+        }
+    </style>
+
 
 </head>
 
@@ -94,8 +104,9 @@
         </div>
         <!-- btn prev next 1 -->
         <div id="prev-next-list1" class="d-flex justify-content-between position-absolute">
-            <button type="button" class="btn-l1" id="prev-btn"><</button>
-            <button type="button" class="btn-l1" id="next-btn">></button>
+            <button type="button" class="btn-l1" id="prev-btn">
+                << /button>
+                    <button type="button" class="btn-l1" id="next-btn">></button>
         </div>
 
         <!-- List product 2 -->
@@ -137,8 +148,9 @@
             </div>
         </div>
         <div id="prev-next-list2" class="d-flex justify-content-between position-absolute">
-            <button type="button" class="btn-l2" id="prev-btn2"><</button>
-            <button type="button" class="btn-l2" id="next-btn2">></button>
+            <button type="button" class="btn-l2" id="prev-btn2">
+                << /button>
+                    <button type="button" class="btn-l2" id="next-btn2">></button>
         </div>
         <!-- list product 3 -->
         <!-- <div id="title-list-product" class="row pt-3">
@@ -183,45 +195,48 @@
             <button type="button" class="btn-l2" id="next-btn2">></button>
         </div> -->
 
-            <!-- Link js -->
-            <script src="js/ListProductJS.js"></script>
+        <!-- Link js -->
+        <script src="js/ListProductJS.js"></script>
         <!-- footer -->
-        <div id="footer" class="row bg-dark d-flex justify-content-around">
-            <div class="col-3 d-flex flex-column text-left align-items-center">
-                <h2 class="text-white">About</h2>
+        <div id="footer" class="row bg-dark  d-flex justify-content-between pt-5">
+            <div class="col-2 d-flex flex-column text-center">
+                <h2 class="text-white font-weight-bold">About</h2>
                 <p class="text-white">Home</p>
                 <p class="text-white">Shop</p>
                 <p class="text-white">Our story</p>
                 <p class="text-white">Blog</p>
             </div>
-            <div class="col-3 d-flex flex-column text-left align-items-center">
-                <h2 class="text-white">Help</h2>
+            <div class="col-2 d-flex flex-column text-center">
+                <h2 class="text-white font-weight-bold">Help</h2>
                 <p class="text-white">Shipping & Returns</p>
                 <p class="text-white">Track Order</p>
                 <p class="text-white">FAQs</p>
             </div>
-            <div class="col-3 d-flex flex-column text-left align-items-center">
-                <h2 class="text-white">Contact</h2>
+            <div class="col-2 d-flex flex-column text-center">
+                <h2 class="text-white font-weight-bold">Contact</h2>
                 <p class="text-white">Phone:</p>
                 <b class="text-white ">(+1) 123 456 7893</b>
                 <p class="text-white">Email:</p>
                 <b class="text-white">ntanhquan.sly@gmail.com</b>
             </div>
-            <div class="col-3 d-flex flex-column text-left align-items-center">
-                <h3 class="text-white">Receive new promotions</h3>
+            <div class="col-6 d-flex flex-column align-items-center">
+                <h2 class="text-white font-weight-bold">Receive new promotions</h2>
                 <p class="text-white">Duis ea tempor commodo amet reprehende</p>
-                <div class="row"><input type="text" class="input-group">
-                    <button class="btn btn">Subscribe</button>
+                <div class="col6 d-flex">
+                    <input type="text" placeholder="Input your email" class="ip">
+                    <button class="btn btn-success">Subscribe</button>
                 </div>
-                <div class="row">
+                <div class="col-6 pt-3 text-left">
                     <img src="images/Twitter 1.png" alt="">
                     <img src="images/Facebook 1.png" alt="">
                     <img src="images/LinkedIn 1.png" alt="">
                     <img src="images/YouTube 1.png" alt="">
                 </div>
-                
+                <p class="col-6 text-white end">@2022 Brand, Inc . Privacy . Terms . Sitemap</p>
+
             </div>
         </div>
+        <!-- end -->
     </div>
 </body>
 
