@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nguyễn Quân Watch</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        #header {
+            background-color: #6DBDFB;
+            height: 80px;
+        }
+
+        #nameshop {
+            font-size: 25px;
+        }
+
+        /* logo */
+        #logoimg {
+            width: 150px;
+            height: 80px;
+            position: absolute;
+        }
+        #txtcart{
+            font-size: 30px;
+            padding-left: 200px;
+            padding-top: 50px;
+            color: #6DBDFB;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- header -->
+        <div id="header" class="row">
+            <div id="nameshop" class="col-6 font-weight-bold pt-3 pl-5">
+                <p>Nguyễn Quân Watch</p>
+            </div>
+            <div class="col-6 d-flex justify-content-around">
+                <div class="d-flex">
+                    <img class="m-auto" src="images/notification_icon24px.png" alt="" srcset="">
+                    <p class="pl-2 m-auto">Notification</p>
+                </div>
+                <div class="d-flex">
+                    <img class="m-auto" src="images/support_icon24px.png" alt="" srcset="">
+                    <p class="pl-2 m-auto">Support</p>
+                </div>
+                <div>
+                    <select name="language" id="lang" class="mt-4 border">
+                        <option value="eng" selected>English</option>
+                        <option value="vn">Việt Nam</option>
+                    </select>
+                </div>
+                <div class="d-flex">
+                    <img class="m-auto" src="images/user_icon24px.png" alt="" srcset="">
+                    <p class="pl-2 m-auto">User</p>
+                </div>
+            </div>
+        </div>
+        <!-- logo -->
+        <div id="logo" class="row">
+            <div class="col-4">
+                <img src="images/NQ-Logo-removebg-preview.png" alt="" srcset="" id="logoimg" class="mt-4">
+                <p id="txtcart">Cart</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
