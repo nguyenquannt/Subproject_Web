@@ -1,4 +1,4 @@
-// list1
+// button next - prev list1
 const $ = document;
 const productList = $.getElementById("product-list");
 const prevBtn = $.getElementById("prev-btn");
@@ -32,8 +32,8 @@ function updateProductList() {
     }
 }
 updateProductList();
-// list2
 
+// button next - prev list2
 const $$ = document;
 const productList2 = $$.getElementById("product-list2");
 const prevBtn2 = $$.getElementById("prev-btn2");
@@ -67,30 +67,47 @@ function updateProductList2() {
     }
 }
 updateProductList2();
-// add to cart and sava data to localhost
+
+// //  add to cart
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const cartCount = document.querySelector('#cart-count');
 const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-// đọc danh sách sản phẩm từ Local Storage. Nếu rỗng => khởi tạo một danh sách trống.
 
 let count = cartItems.length;
+let imageCount = 1;
 
-addToCartButtons.forEach((button, index) => {
+addToCartButtons.forEach((button) => {
   button.addEventListener('click', () => {
     count++;
     cartCount.innerText = count;
 
-    // Lưu sản phẩm vào Local Storage
-    cartItems.push(`Product ${index + 1}`);
+    const product = {
+      name: button.parentNode.querySelector('.name-pd').textContent,
+      price: parseInt(button.parentNode.querySelector('.money-product').textContent),
+      image: `image-${imageCount}.png`, // tên ảnh sản phẩm
+    };
+    cartItems.push(product);
     localStorage.setItem('cart', JSON.stringify(cartItems));
+    
+    imageCount++;
+
+    // Hiển thị sản phẩm trong giỏ hàng
+    const cartItemsList = document.querySelector('#cart-items');
+    cartItemsList.innerHTML = '';
+    cartItems.forEach((item) => {
+      const listItem = document.createElement('li');
+      const productImage = document.createElement('img');
+      const productName = document.createElement('h3');
+      const productPrice = document.createElement('p');
+
+      productImage.src = item.image;
+      productName.innerText = item.name;
+      productPrice.innerText = `Price: $${item.price}`;
+
+      listItem.appendChild(productImage);
+      listItem.appendChild(productName);
+      listItem.appendChild(productPrice);
+      cartItemsList.appendChild(listItem);
+    });
   });
 });
-
-// Đọc sản phẩm từ Local Storage và hiển thị lên trang cart
-const cartItemsList = document.querySelector('#cart-items');
-cartItems.forEach((item) => {
-  const listItem = document.createElement('li');
-  listItem.innerText = item;
-  cartItemsList.appendChild(listItem);
-});
-

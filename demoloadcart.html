@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Cart</title>
+    <title>Cart</title>
+    <style>
+        /* CSS để định dạng danh sách sản phẩm */
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-item img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .cart-item-name {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .cart-item-price {
+            color: green;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Your Cart</h1>
-  <ul id="cart-items"></ul>
-  <script src="cartdemo.js"></script>
-  
+    <h1>Cart</h1>
+    <div id="cart-items"></div>
+
+    <script>
+        // Lấy danh sách sản phẩm từ localStorage
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Hiển thị danh sách sản phẩm trên trang
+        const cartItemsDiv = document.querySelector('#cart-items');
+        cartItems.forEach((item) => {
+            // Tạo phần tử HTML để hiển thị thông tin sản phẩm
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+
+            const cartItemImage = document.createElement('img');
+            cartItemImage.src = `images/${item.image}`; // đường dẫn hình ảnh
+            cartItem.appendChild(cartItemImage);
+            
+            const cartItemName = document.createElement('div');
+            cartItemName.classList.add('cart-item-name');
+            cartItemName.innerText = item.name;
+            cartItem.appendChild(cartItemName);
+            const cartItemPrice = document.createElement('div');
+            cartItemPrice.classList.add('cart-item-price');
+            cartItemPrice.innerText = item.price + ' đ'; // thay bằng giá thực tế
+            cartItem.appendChild(cartItemPrice);
+
+            // Thêm sản phẩm vào danh sách
+            cartItemsDiv.appendChild(cartItem);
+            // localStorage.clear();
+
+        });
+    </script>
 </body>
+
 </html>
