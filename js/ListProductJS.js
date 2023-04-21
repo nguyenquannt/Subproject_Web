@@ -67,15 +67,30 @@ function updateProductList2() {
     }
 }
 updateProductList2();
-// count product
+// add to cart and sava data to localhost
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const cartCount = document.querySelector('#cart-count');
+const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+// đọc danh sách sản phẩm từ Local Storage. Nếu rỗng => khởi tạo một danh sách trống.
 
-let count = 0;
+let count = cartItems.length;
 
-addToCartButtons.forEach((button) => {
+addToCartButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
     count++;
     cartCount.innerText = count;
+
+    // Lưu sản phẩm vào Local Storage
+    cartItems.push(`Product ${index + 1}`);
+    localStorage.setItem('cart', JSON.stringify(cartItems));
   });
 });
+
+// Đọc sản phẩm từ Local Storage và hiển thị lên trang cart
+const cartItemsList = document.querySelector('#cart-items');
+cartItems.forEach((item) => {
+  const listItem = document.createElement('li');
+  listItem.innerText = item;
+  cartItemsList.appendChild(listItem);
+});
+
