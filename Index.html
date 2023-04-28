@@ -15,7 +15,6 @@
         <!-- div1 -->
         <div id="div1">
             <div id="head">
-                <!-- div menu - logo -->
                 <div id="logo">
                     <img src="images/NQ-Logo-removebg-preview.png" alt="" class="img-logo">
                 </div>
@@ -26,27 +25,26 @@
                     <a href="Login.html" class="text-menu">LOG IN</a>
                 </div>
             </div>
-            <!-- banner -->
             <div id="banner">
                 <div class="prev">
-                    <img src="images/prev.png" alt="" class="img-prev">
+                  <img src="images/prev.png" alt="" class="img-prev" onclick="prevImage()">
                 </div>
                 <div class="img-banner">
-                    <img src="images/image-9.png" alt="" srcset="">
+                  <img id="banner-image" src="images/image-9.png" alt="" srcset="">
                 </div>
                 <div id="text">
-                    <p class="big-text">STYLISH WATCHES</p>
-                    <p class="small-text">Smart watches, multi-features designed towards luxury and elegance, suitable
-                        for the vast majority of people are the prerequisites we aim for.</p>
-                    <div id="btn-banner">
-                        <a href=""><button class="btn-more">Read More</button></a>
-                        <a href="AboutUs.html"><button class="btn-contact">Contact Us</button></a>
-                    </div>
+                  <p id="big-text" class="big-text">STYLISH WATCHES</p>
+                  <p id="small-text" class="small-text">Smart watches, multi-features designed towards luxury and elegance, suitable for the vast majority of people are the prerequisites we aim for.</p>
+                  <div id="btn-banner">
+
+                    <a href="ListProducts.html"><button onclick="readMore()" class="btn-more">Product</button></a>
+                    <a href="AboutUs.html"><button onclick="contactUs()" class="btn-contact">Contact Us</button></a>
+                  </div>
                 </div>
                 <div class="next">
-                    <img src="images/next.png" alt="" class="img-next">
+                  <img src="images/next.png" alt="" class="img-next" onclick="nextImage()">
                 </div>
-            </div>
+              </div>
         </div>
         <!-- div2 -->
         <div id="div2">
@@ -59,13 +57,13 @@
                         readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it
                         has a more-or-less normal distribution of letters, as opposed to using 'Content here, content
                         here', making it</p>
-                    <button class="ml-btn">Read More</button>
+                    
+                    <a href="ListProducts.html"><button class="ml-btn">Product</button></a>
                 </div>
                 <div class="main-right">
                     <img src="images/image-1.png" alt="" class="img-right">
                 </div>
             </div>
-
         </div>
         <!-- div3 -->
         <div id="div3">
@@ -134,7 +132,7 @@
             <div class="div4-r3">
                 <!-- left -->
                 <div class="r3-left">
-                    <div class="r3-left-img">
+                    <div id="fast-delivery-img" class="r3-left-img">
                         <img src="images/feature-1.png" alt="">
                     </div>
                     <div class="r3-left-text">
@@ -143,11 +141,10 @@
                         </p>
                     </div>
                 </div>
-                /
                 <!-- right -->
-                <div class="r3-right">
+                <div id="FS-SP" class="r3-right">
                     <div class="r3-left-img">
-                        <img src="images/feature-1.png" alt="">
+                        <img src="images/feature-2.png" alt="">
                     </div>
                     <div class="r3-left-text">
                         <p class="rlt-1">Free Shipping</p>
@@ -159,9 +156,9 @@
             <!-- r5 -->
             <div class="div4-r3">
                 <!-- left -->
-                <div class="r3-left">
+                <div id="best-quality-img" class="r3-left">
                     <div class="r3-left-img">
-                        <img src="images/feature-1.png" alt="">
+                        <img src="images/feature-3.png" alt="">
                     </div>
                     <div class="r3-left-text">
                         <p class="rlt-1">Best Quality</p>
@@ -171,9 +168,9 @@
                 </div>
                 /
                 <!-- right -->
-                <div class="r3-right">
+                <div id="FS-SP" class="r3-right">
                     <div class="r3-left-img">
-                        <img src="images/feature-1.png" alt="">
+                        <img src="images/feature-4.png" alt="">
                     </div>
                     <div class="r3-left-text">
                         <p class="rlt-1">24/4 Customer Support</p>
@@ -208,6 +205,8 @@
             <p class="txt-end">© 2023 All Rights Reserved By Nguyen Quan</p>
         </div>
     </div>
+
+    <script src="js/IndexJS.js"></script>
 </body>
 
 </html>

@@ -57,8 +57,32 @@
             </div>
         </div>
         <!-- product -->
-            <div id="cart-items" class="d-flex flex-column"></div>
-            <script src="js/CartJS.js"></script>
+            <!-- <div id="cart-items" class="d-flex flex-column"></div>
+            <script src="js/CartJS.js"></script> -->
+
+            <!-- test -->
+            <!-- product -->
+<div id="cart-items" class="d-flex flex-column"></div>
+<script src="js/CartJS.js"></script>
+
+<!-- Thêm template cho sản phẩm trong giỏ hàng -->
+<template id="cart-item-template">
+  <div class="cart-item">
+    <img class="cart-item-image">
+    <div class="cart-item-info">
+      <div class="cart-item-name"></div>
+      <div class="cart-item-quantity">
+        <button class="cart-quantity-button decrease-button">-</button>
+        <span class="cart-item-quantity-value"></span>
+        <button class="cart-quantity-button increase-button">+</button>
+      </div>
+      <div class="cart-item-price"></div>
+      <button class="checkout-button">Đặt hàng</button>
+    </div>
+  </div>
+</template>
+
+            <!-- test -->
             
         <!-- footer -->
         <div id="footer" class="row bg-dark  d-flex justify-content-between pt-5">

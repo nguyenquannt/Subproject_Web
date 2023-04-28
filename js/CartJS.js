@@ -69,3 +69,4 @@ localStorage.setItem("cart", JSON.stringify(cartItems));
 
         //   localStorage.clear();
         // xóa toàn bộ sản phẩm
+

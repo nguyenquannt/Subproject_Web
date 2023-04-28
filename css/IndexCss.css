@@ -25,7 +25,7 @@
 }
 
 #menu {
-    width: 600px;
+    width: 650px;
     height: 55px;
     background-color: #B5CAEE;
     border-radius: 10px;
@@ -38,6 +38,24 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+a.text-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+a.text-menu:hover {
+    background-color: #cad2df;
+    color: #252525;
+    width: 98px;
+    border: 2px solid #cad2df;
 }
 
 #banner {
@@ -111,6 +129,11 @@
     border-radius: 50%;
     background-color: #f2d8b9;
     margin: auto;
+}
+
+#banner-image {
+    width: 550px;
+    height: 550px;
 }
 
 /* div2 */
@@ -212,12 +235,27 @@
 
 .div3-sp-img {
     margin-top: 10px;
-    width: 220px;
+    width: 200px;
     height: 230px;
-    /* border: black 1px solid; */
     border-radius: 10px;
-
 }
+
+.div3-sp:hover img {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.div3-sp:hover .icon-ratting-RP {
+    transform: scale(1.2);
+}
+
+.div3-sp:hover .text-prd {
+    transform: scale(1.1);
+}
+
+/* 
+  scale phóng lớn lên gấp đôi
+  rotate xoay sản phẩm
+*/
 
 .img-sp {
     width: 220px;
@@ -244,7 +282,6 @@
 }
 
 .icon-ratting-RP {
-
     margin: auto;
 }
 
@@ -311,34 +348,83 @@
     width: 450px;
     font-size: 20px;
 }
+
+#fast-delivery-img img {
+    transition: transform 1s;
+}
+
+#fast-delivery-img img:hover {
+    transform: translateX(70%);
+}
+
+#best-quality-img img{
+    transition: transform 0.2s ease-in-out;
+  }
+  
+#best-quality-img img:hover {
+    transform: scale(1.2);
+  }
+
+ #FS-SP:hover img {
+    animation: shake 0.5s;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+      /* di chuyển phần tử sang phải 2px.còn lại tương tự */
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  
+
 /* div5 */
-#div5{
+#div5 {
     height: 250px;
     background-color: #C1DCF9;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.div5-1{
+
+.div5-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.div5-txt{
+
+.div5-txt {
     color: white;
     width: 200px;
     text-align: center;
 }
+.div5-1 img:hover {
+    transform: scale(1.2);
+  }
+
 /* div6 */
-#div6{
+#div6 {
     background-color: #252525;
     height: 60px;
 }
-.txt-end{
+
+.txt-end {
     color: white;
     text-align: center;
-    
+
 }
-.address{
+
+.address {
     text-decoration: none;
 }
