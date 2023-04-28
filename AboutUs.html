@@ -8,12 +8,16 @@
     <title>Nguyễn Quân Watch</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/AboutUsCss.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div id="wrapper">
         <div id="div1">
-            <!-- div menu - logo -->
             <div id="logo">
                 <img src="images/NQ-Logo-removebg-preview.png" alt="" class="img-logo">
             </div>
@@ -24,34 +28,79 @@
                 <a href="Login.html" class="text-menu">LOG IN</a>
             </div>
         </div>
-        <div id="div2">
-            <!-- info founder -->
-            <div id="div-title">
-                <p class="text-title">TESTIMONIAL</p>
-                <p class="text-small">It is a long established fact that a reader will be distracted by the readable
-                    content of a page</p>
-            </div>
-            <div id="admin">
-                <div class="prev-icon">
-                    <img src="images/prev.png" alt="">
-                </div>
-                <div id="info-admin">
-                    <img src="images/client.jpg" alt="">
-                    <p class="lead-name">Sandy Den</p>
-                    <p class="lead-info">Many Variations</p>
-                </div>
 
-                <div id="text-admin-div">
-                    <p class="text-admin-class">There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered alteration in some form, by injected humour, or randomised words which
-                        don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need
-                        to beThere are many variations of passages</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="div2">
+                        <div id="div-title">
+                            <p class="text-title">FONDATEUR 1</p>
+                            <p class="text-small">Ambition is the path to success. Persistence is the vehicle you arrive
+                                in</p>
+                        </div>
+                        <div id="admin">
+                            <div class="prev-icon">
+                                <img id="img-prev" src="images/prev.png" alt=""
+                                    onclick="$('#myCarousel').carousel('prev')">
+                            </div>
+                            <div id="info-admin">
+                                <img src="images/client.jpg" alt="">
+                                <p class="lead-name">Join Wick</p>
+                                <p class="lead-info">The Night</p>
+                            </div>
+                            <div id="text-admin-div">
+                                <p class="text-admin-class">There are many variations of passages of Lorem Ipsum
+                                    available, but the
+                                    majority have suffered alteration in some form, by injected humour, or randomised
+                                    words which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need
+                                    to beThere are many variations of passages</p>
+                            </div>
+                            <div class="next-icon">
+                                <img id="img-next" src="images/next.png" alt=""
+                                    onclick="$('#myCarousel').carousel('next')">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="next-icon">
-                    <img src="images/next.png" alt="">
+                <div class="carousel-item">
+                    <div id="div2">
+                        <div id="div-title">
+                            <p class="text-title">FONDATEUR 2</p>
+                            <p class="text-small">It is a long established fact that a reader will be distracted by the
+                                readable
+                                content of a page</p>
+                        </div>
+                        <div id="admin">
+                            <div class="prev-icon">
+                                <img id="img-prev" src="images/prev.png" alt=""
+                                    onclick="$('#myCarousel').carousel('prev')">
+                            </div>
+                            <div id="info-admin">
+                                <img src="images/client.jpg" alt="">
+                                <p class="lead-name">Sandy Den</p>
+                                <p class="lead-info">Many Variations</p>
+                            </div>
+                            <div id="text-admin-div">
+                                <p class="text-admin-class">There are many variations of passages of Lorem Ipsum
+                                    available, but the
+                                    majority have suffered alteration in some form, by injected humour, or randomised
+                                    words which
+                                    don't look even slightly believable. If you are going to use a passage of Lorem
+                                    Ipsum, you need
+                                    to beThere are many variations of passages</p>
+                            </div>
+                            <div class="next-icon">
+                                <img id="img-next" src="images/next.png" alt=""
+                                    onclick="$('#myCarousel').carousel('next')">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- div3 -->
         <div id="div3">
             <!-- Contac us -->
             <img src="images/contact.jpg" alt="" class="img-contactus">
@@ -73,6 +122,7 @@
             <p class="footer">© 2023 All Rights Reserved By Nguyen Quan</p>
         </div>
     </div>
+    <script src="js/AboutUsJS.js"></script>
 </body>
 
 </html>
