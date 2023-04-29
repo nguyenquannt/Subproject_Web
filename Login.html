@@ -11,26 +11,27 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <img src="images/NQ-Logo-removebg-preview.png" alt="" class="logo">
-        <div id="banner">
-            <img src="images/img-login.jpg" alt="" class="img-banner">
-        </div>
-        <div id="container-input">
-            <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
-            <svg class="icon-key" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/></svg>
-            <input type="text" class="input" placeholder="User name">
-            <input type="text" class="input" placeholder="Password">
-            <button class="btn-login">Log in</button>
-        </div>
-        <div id="fpass-checkbox">
-            <div class="divcheckbox">
-                <input type="checkbox" class="checkbox">
-                <p class="rememberme">Remember Me</p>
+    <div class="container-fluid">
+        <form method="post">
+            <div class="imgcontainer">
+                <img id="img-logo" src="images/NQ-Logo-removebg-preview.png" alt="Avatar" class="avatar">
             </div>
-            <a class="forgot-password" href="">Forgot password</a>
-        </div>
-    </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input id="user-name" type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" onclick="checkRegex()">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        </form>
+
+        <script src="js/LoginJS.js"></script>
 </body>
 
 </html>

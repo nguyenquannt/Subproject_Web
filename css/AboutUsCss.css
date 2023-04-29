@@ -50,6 +50,7 @@ a.text-menu:hover {
     color: #252525;
     width: 98px;
     border: 2px solid #cad2df;
+    text-decoration: none;
 }
 
 /* div 2 */
