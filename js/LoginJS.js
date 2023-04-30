@@ -36,7 +36,6 @@ function checkTF() {
 }
 function checkRegex() {
     if (!checkTF()) {
-        alert("Hãy kiểm tra lại các định dạng nhập !");
     }
     else {
         alert("Cảm ơn vị vì đã lựa chọn chúng tôi, chúc bạn mua sắm vui vẽ !");

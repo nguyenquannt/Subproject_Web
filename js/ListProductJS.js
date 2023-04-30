@@ -131,3 +131,45 @@ addToCartButtons.forEach((button) => {
         });
     });
 });
+
+// Print box text details products
+
+var pd2 = document.getElementById("pd2");
+var pd2Overlay = pd2.querySelector(".pd2-overlay");
+
+pd2.addEventListener("mouseenter", function() {
+    pd2Overlay.style.display = "block";
+});
+
+pd2.addEventListener("mouseleave", function() {
+    pd2Overlay.style.display = "none";
+});
+
+// regex chek email
+function checkEmail() {
+    const str = document.getElementById("ip-email").value;
+    const regex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+    if (regex.test(str) == true) {
+        return 1;
+    }
+    else {
+        alert("chuỗi bạn đã nhập không đúng định dạng một địa chỉ email !")
+        return 0;
+    }
+}
+function checkTF() {
+    let isValid = true;
+    if (checkEmail() == 0) {
+        isValid = false;
+        return isValid;
+    }
+    return isValid;
+}
+function checkRegex() {
+    if (!checkTF()) {
+    }
+    else {
+        alert("Cảm ơn bạn đã đóng góp ý kiến cho chúng tôi, Chúc bạn có một ngày tốt lành !");
+    }
+}

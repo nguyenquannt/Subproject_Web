@@ -79,7 +79,6 @@ function checkTF() {
 }
 function checkRegex() {
     if (!checkTF()) {
-        alert("Hãy kiểm tra lại các định dạng nhập !");
     }
     else {
         alert("Cảm ơn bạn đã đóng góp ý kiến cho chúng tôi, Chúc bạn có một ngày tốt lành !");

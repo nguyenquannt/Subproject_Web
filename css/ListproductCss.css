@@ -2,6 +2,47 @@
     width: 1480px;
 }
 
+/* menu */
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 650px;
+    height: 55px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.text-menu {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+a.text-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+a.text-menu:hover {
+    background-color: #cad2df;
+    color: #252525;
+    width: 100px;
+    border: 2px solid #cad2df;
+    text-decoration: none;
+}
+
+/* banner */
 #banner {
     width: 1480px;
     margin-left: -14px;
@@ -59,6 +100,7 @@
     border: 1px solid gray;
     background-color: #C1DCF9;
     border-radius: 20px;
+    position: relative;
 }
 
 #prev-next-list2 {
@@ -66,25 +108,66 @@
     margin-left: -10px;
     width: 1470px;
 }
+/* phóng to sản phẩm */
+#pd2:hover img {
+    transform: scale(1.2);
+}
+#pd1:hover img {
+    transform: scale(1.2);
+}
+/* box text */
+/* #pd2-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    text-align: center;
+    padding-top: 60px; 
+}
 
+.pd2-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(156 156 156, 0.9);
+}
+
+.pd2-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+} */
+/*  */
 .btn-l2 {
     width: 40px;
     height: 40px;
     border-radius: 30%;
     background-color: #F2D8B9;
 }
+
 /* icon cart */
-#icon-cart{
+#icon-cart {
     position: fixed;
     top: 50%;
     left: 95%;
 }
-#cart-sgv{
+
+#cart-sgv {
     position: absolute;
     width: 50px;
     height: 50px;
 }
-#cart-count{
+
+#cart-count {
     position: absolute;
     font-weight: bold;
     background-color: red;
@@ -96,12 +179,14 @@
     margin-top: 4px;
     left: 30px;
 }
+
 /* footer */
 #footer {
     margin-left: -15px;
     width: 1480px;
     height: 300px;
 }
+
 .ip {
     width: 275px;
     height: 50px;
