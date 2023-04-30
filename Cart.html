@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Nguyễn Quân Watch</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
@@ -13,8 +12,8 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
-   <link rel="stylesheet" href="css/CartCss.css">
-    
+    <link rel="stylesheet" href="css/CartCss.css">
+
 </head>
 
 <body>
@@ -22,14 +21,19 @@
         <!-- header -->
         <div id="header" class="row">
             <div id="nameshop" class="col-6 font-weight-bold pt-3 pl-5">
-                <p>Nguyễn Quân Watch</p>
+                <div id="menu">
+                    <a href="Index.html" class="text-menu">HOME</a>
+                    <a href="AboutUs.html" class="text-menu">ABOUT US</a>
+                    <a href="ListProducts.html" class="text-menu">SHOP</a>
+                    <a href="Login.html" class="text-menu">LOG IN</a>
+                </div>
             </div>
             <div class="col-6 d-flex justify-content-around">
-                <div class="d-flex">
+                <div class="d-flex" onclick="notification()">
                     <img class="m-auto" src="images/notification_icon24px.png" alt="" srcset="">
-                    <p class="pl-2 m-auto">Notification</p>
+                    <p class="pl-2 m-auto" >Notification</p>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex" onclick="support()">
                     <img class="m-auto" src="images/support_icon24px.png" alt="" srcset="">
                     <p class="pl-2 m-auto">Support</p>
                 </div>
@@ -48,42 +52,21 @@
         <!-- logo -->
         <div id="logo" class="row align-items-center">
             <div class="col-4">
-                <img src="images/NQ-Logo-removebg-preview.png" alt="" srcset="" id="logoimg" class="mt-4">
+                <a href="Index.html"><img src="images/NQ-Logo-removebg-preview.png" alt="" srcset="" id="logoimg" class="mt-4"></a>
                 <p id="txtcart">Cart</p>
             </div>
             <div id="inputsearch" class="col-8">
                 <input type="text" placeholder="Search Products" id="input">
-                <button id="buttonS" class="">Search</button>
+                <button id="buttonS" >Search</button>
             </div>
         </div>
-        <!-- product -->
-            <!-- <div id="cart-items" class="d-flex flex-column"></div>
-            <script src="js/CartJS.js"></script> -->
-
-            <!-- test -->
-            <!-- product -->
-<div id="cart-items" class="d-flex flex-column"></div>
-<script src="js/CartJS.js"></script>
-
-<!-- Thêm template cho sản phẩm trong giỏ hàng -->
-<template id="cart-item-template">
-  <div class="cart-item">
-    <img class="cart-item-image">
-    <div class="cart-item-info">
-      <div class="cart-item-name"></div>
-      <div class="cart-item-quantity">
-        <button class="cart-quantity-button decrease-button">-</button>
-        <span class="cart-item-quantity-value"></span>
-        <button class="cart-quantity-button increase-button">+</button>
-      </div>
-      <div class="cart-item-price"></div>
-      <button class="checkout-button">Đặt hàng</button>
-    </div>
-  </div>
-</template>
-
-            <!-- test -->
-            
+        <div id="cart-items" class="d-flex flex-column">
+            <!-- procudt item -->
+        </div>
+        
+        <div class="row d-flex justify-content-center">
+            <button class="btn btn-danger" onclick="clearAll()">Clear All Product</button>
+        </div>
         <!-- footer -->
         <div id="footer" class="row bg-dark  d-flex justify-content-between pt-5">
             <div class="col-2 d-flex flex-column text-center">
@@ -125,7 +108,8 @@
         </div>
 
     </div>
-
+    <!-- link js -->
+    <script src="js/CartJS.js"></script>
 </body>
 
 </html>

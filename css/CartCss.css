@@ -2,11 +2,44 @@
     background-color: #6DBDFB;
     height: 80px;
 }
-
-#nameshop {
-    font-size: 25px;
+#menu {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    width: 650px;
+    height: 55px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    margin-top: 1%;
 }
 
+.text-menu {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+a.text-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+a.text-menu:hover {
+    background-color: #cad2df;
+    color: #252525;
+    width: 100px;
+    border: 2px solid #cad2df;
+    text-decoration: none;
+}
 /* logo */
 #logo {
     height: 150px;
@@ -80,36 +113,104 @@
 
 .cart-item-quantity,
 .cart-item-price {
-    margin-right: 10px;
+    margin-left: 4vh;
 }
+.cart-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: red;
+  }
+  
+
 
 .cart-item-quantity:after {
-    content: "|";
+    content: "Price";
     margin-left: 10px;
     margin-right: 10px;
 }
 
-#checkout-button {
-    background-color: #4CAF50;
-    border: none;
+/* burtton đặt hàng */
+.checkout-button {
+    background-color: #6DBDFB;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: auto;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0px;
 }
 
-#checkout-button:hover {
+.checkout-button:hover {
+    background-color: #6DBDFB;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
-    background-color: #3e8e41;
+    border-radius: 10px;
+    border: 0px;
 }
+
+/* button tăng giảm số lượng sản phẩm */
+/* Tăng */
+.cart-item-quantity-button {
+    border: none;
+    background-color: #fff;
+    color: #33FF00;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.cart-item-quantity-button:hover {
+    background-color: #33FF00;
+    color: #fff;
+}
+
+/* giảm */
+.minus-button {
+    border: none;
+    background-color: #fff;
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.minus-button:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+/* test */
+@keyframes blink {
+    0% { background-color: #fff; }
+    50% { background-color: #ffff00; }
+    100% { background-color: #fff; }
+  }
+  
+  .blink {
+    animation: blink 1s infinite;
+  }
+  
+
 /* footer */
 #footer {
     margin-left: -15px;
     width: 1480px;
-    height: 300px;
+    height: 63vh;
 }
 
 .ip {
