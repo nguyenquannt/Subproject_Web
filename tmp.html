@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST </title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/AboutUsCss.css"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        #div-logo {
+            background-color: #6DBDFB;
+        }
+
+        #div-menu {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #6DBDFB;
+        }
+
+        #text-nemu {
+            color: white;
+            font-weight: bold;
+        }
+
+        #navbarNav {
+            padding-right: 40px;
+        }
+
+        .img-logo {
+            max-width: 65%;
+            height: auto;
+        }
+
+        .navbar {
+            background-color: #6DBDFB;
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #cad2df;
+            color: #252525;
+            border-radius: 10px;
+        }
+
+        .navbar-toggler {
+            border: none;
+            color: #000000;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-toggler {
+                margin-top: 10px;
+            }
+
+            .img-logo {
+                max-width: 20%;
+                height: auto;
+            }
+
+            #div-menu {
+                display: flex;
+                justify-content: flex-start;
+                background-color: #6DBDFB;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper" class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="div-logo" class="col-md-2">
+                    <a href="Index.html"><img src="images/NQ-Logo-removebg-preview.png" alt="" class="img-logo"></a>
+                </div>
+                <div id="div-menu" class="col-md-10">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a id="text-nemu" href="Index.html" class="nav-link pr-3">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="text-nemu" href="AboutUs.html" class="nav-link pr-3">ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="text-nemu" href="ListProducts.html" class="nav-link pr-3">SHOP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="text-nemu" href="Login.html" class="nav-link pr-3">LOG IN</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -16,19 +16,39 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="div1">
-            <div id="logo">
+    <div id="wrapper" class="container-fluid">
+        <!-- div 1 -->
+        <div class="row">
+            <div id="div-logo" class="col-md-2">
                 <a href="Index.html"><img src="images/NQ-Logo-removebg-preview.png" alt="" class="img-logo"></a>
             </div>
-            <div id="menu">
-                <a href="Index.html" class="text-menu">HOME</a>
-                <a href="AboutUs.html" class="text-menu">ABOUT US</a>
-                <a href="ListProducts.html" class="text-menu">SHOP</a>
-                <a href="Login.html" class="text-menu">LOG IN</a>
+            <div id="div-menu" class="col-md-10">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a id="text-nemu" href="Index.html" class="nav-link pr-3">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="text-nemu" href="AboutUs.html" class="nav-link pr-3">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="text-nemu" href="ListProducts.html" class="nav-link pr-3">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="text-nemu" href="Login.html" class="nav-link pr-3">LOG IN</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
             </div>
         </div>
-
+        <!--  -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
