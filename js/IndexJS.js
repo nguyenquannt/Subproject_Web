@@ -23,11 +23,3 @@ function prevImage() {
     document.getElementById("big-text").innerHTML = bigTexts[currentImage];
     document.getElementById("small-text").innerHTML = smallTexts[currentImage];
 }
-
-function readMore() {
-
-}
-
-function contactUs() {
-
-}
