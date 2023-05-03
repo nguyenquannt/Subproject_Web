@@ -15,7 +15,6 @@
         flex-direction: column;
     }
 
-    /* head */
     #head {
         width: 100%;
         height: 80px;
@@ -52,7 +51,6 @@
         font-size: 8px;
     }
 
-    /* banner */
     #banner {
         padding-top: 30px;
         display: flex;
@@ -90,6 +88,7 @@
         font-size: 25px;
         text-align: left;
         margin-bottom: 10px;
+        font-weight: bold;
     }
 
     .small-text {
@@ -139,7 +138,7 @@
     }
 }
 
-/* Ipad Air */
+/* Ipad Mini */
 @media (min-width: 577px) and (max-width: 768px) {
     #wrapper {
         width: 100%;
@@ -218,11 +217,12 @@
 
     .big-text {
         font-size: 30px;
+        font-weight: bold;
     }
 
     .small-text {
         width: 100%;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #btn-banner {
@@ -375,11 +375,30 @@
         font-size: 16px;
     }
 
+    .btn-more:hover {
+        width: 110px;
+        height: 40px;
+        background-color: #e0d5c8;
+        border: 0px;
+        color: black;
+        font-size: 16px;
+    }
+
     .btn-contact {
         margin-left: 50px;
         width: 110px;
         height: 40px;
         background-color: #252525;
+        border: 0px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .btn-contact:hover {
+        margin-left: 50px;
+        width: 110px;
+        height: 40px;
+        background-color: #5aa1bd;
         border: 0px;
         color: white;
         font-size: 16px;
@@ -397,19 +416,11 @@
     #div2 {
         width: 100%;
         height: auto;
-        position: static;
-    }
-
-    .img-div2 {
-        height: auto;
-        width: 100%;
-        position: absolute;
     }
 
     #div2-main {
         display: flex;
         flex-direction: column;
-        position: absolute;
     }
 
     .main-left {
@@ -424,6 +435,11 @@
         text-align: center;
     }
 
+    .main-right {
+        display: flex;
+        justify-content: center;
+    }
+
     .ml-big-text {
         font-size: 25px;
     }
@@ -433,9 +449,8 @@
     }
 
     .img-right {
-        width: 98%;
-        height: 400px;
-        margin-top: 20px;
+        width: 50%;
+        height: 200px;
         margin-left: 0;
     }
 }
@@ -446,20 +461,29 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .img-div2 {
-        width: 100%;
-        height: 90%;
-        position: absolute;
+    #div2-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .main-left {
         display: flex;
         flex-direction: column;
-        position: absolute;
         align-items: center;
         padding-top: 5%;
+    }
+
+    .ml-big-text {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .ml-small-text {
+        font-size: 18px;
     }
 
     .ml-btn {
@@ -472,8 +496,6 @@
     }
 
     .main-right {
-        top: 25%;
-        position: absolute;
         width: 100%;
         height: auto;
         display: flex;
@@ -481,21 +503,20 @@
     }
 
     .img-right {
-        position: absolute;
-        top: 1200px;
+        position: relative;
+        top: 20px;
     }
 }
 
-/* mac book */
+/* laptop */
 @media (min-width: 769px) {
     #div2 {
+        padding-top: 5%;
         width: 100%;
         height: auto;
         position: relative;
-    }
-
-    .img-div2 {
-        height: 550px;
+        display: flex;
+        justify-content: space-around;
     }
 
     #div2-main {
@@ -506,12 +527,10 @@
     .main-left {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        width: 600px;
-        height: 300px;
-        margin-top: -440px;
-        margin-left: 250px;
+        padding-left: 10%;
+        width: 60%;
     }
+
 
     .ml-big-text {
         font-size: 35px;
@@ -520,6 +539,7 @@
     }
 
     .ml-small-text {
+        padding-top: 5%;
         font-size: 20px;
     }
 
@@ -532,222 +552,467 @@
         height: 40px;
     }
 
+    .ml-btn:hover {
+        background-color: #5aa1bd;
+        border: 0px;
+        color: white;
+        font-size: 16px;
+        margin-top: 30px;
+        width: 110px;
+        height: 40px;
+    }
+
     .img-right {
-        position: absolute;
-        width: 380px;
-        height: 440px;
-        margin-top: -500px;
-        margin-left: 920px;
+        height: 100%;
+        width: auto;
+        padding-left: 10%;
+    }
+
+}
+
+/* div3 */
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #div3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #C1DCF9;
+        height: auto;
+        position: relative;
+    }
+
+    .div3-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .div3-title {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    .div3-text {
+        margin-top: -1 0px;
+        font-size: 12px;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .div3-bottom {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .div3-sp {
+        margin: 10px 5px;
+        width: calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        border: 2px solid gray;
+        align-items: center;
+    }
+
+    .div3-sp-img {
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .img-sp {
+        width: auto;
+        height: 130px;
+    }
+
+    .money-sp {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .best-sp {
+        margin-top: -18px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .div-ratting-sold {
+        margin-top: -24px;
+    }
+
+    .text-prd {
+        padding-left: 50px;
     }
 }
 
-/* chưa làm */
-/* div3 */
-#div3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #C1DCF9;
-    height: 600px;
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #div3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #C1DCF9;
+        height: auto;
+        position: relative;
+    }
+
+    .div3-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .div3-title {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    .div3-text {
+        margin-top: -1 0px;
+        font-size: 12px;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    .div3-bottom {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .div3-sp {
+        margin: 10px 5px;
+        width: calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        border: 2px solid gray;
+        align-items: center;
+    }
+
+    .div3-sp-img {
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .img-sp {
+        width: auto;
+        height: 130px;
+    }
+
+    .money-sp {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .best-sp {
+        margin-top: -18px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .div-ratting-sold {
+        margin-top: -24px;
+    }
+
+    .text-prd {
+        padding-left: 50px;
+    }
 }
 
-.div3-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* laptop */
+@media (min-width: 769px) {
+    #div3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #C1DCF9;
+        min-height: 600px;
+    }
 
-.div3-title {
-    font-size: 35px;
-    font-weight: bold;
-    color: white;
-}
+    .div3-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.div3-text {
-    margin-top: -20px;
-    font-size: 20px;
-    font-weight: bold;
-}
+    .div3-title {
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+    }
 
-.div3-bottom {
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-}
+    .div3-text {
+        margin-top: -20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
 
-.div3-sp {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    border: 2px solid gray;
-    align-items: center;
-    width: 250px;
-    height: 350px;
-    margin-left: 40px;
-}
+    .div3-bottom {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.div3-sp-img {
-    margin-top: 10px;
-    width: 200px;
-    height: 230px;
-    border-radius: 10px;
-}
+    .div3-sp {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border: 2px solid gray;
+        align-items: center;
+        margin-left: 40px;
+    }
 
-.div3-sp:hover img {
-    transform: scale(1.2) rotate(10deg);
-}
+    .div3-sp-img {
+        margin-top: 10px;
+        border-radius: 10px;
+    }
 
-.div3-sp:hover .icon-ratting-RP {
-    transform: scale(1.2);
-}
+    .div3-sp:hover img {
+        transform: scale(1.2) rotate(10deg);
+    }
 
-.div3-sp:hover .text-prd {
-    transform: scale(1.1);
-}
+    .div3-sp:hover .icon-ratting-RP {
+        transform: scale(1.2);
+    }
 
-/* 
-  scale phóng lớn lên gấp đôi
-  rotate xoay sản phẩm
-*/
+    .div3-sp:hover .text-prd {
+        transform: scale(1.1);
+    }
 
-.img-sp {
-    width: 220px;
-    height: 230px;
-}
+    .img-sp {
+        width: 220px;
+        height: 230px;
+    }
 
-.money-sp {
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 25px;
-}
+    .money-sp {
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 25px;
+    }
 
-.best-sp {
-    margin-top: -18px;
-    font-size: 22px;
-    color: white;
+    .best-sp {
+        margin-top: -18px;
+        font-size: 22px;
+        color: white;
 
-}
+    }
 
-.div-ratting-sold {
-    margin-top: -30px;
-    display: flex;
-    justify-content: space-between;
-}
+    .div-ratting-sold {
+        margin-top: -30px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.icon-ratting-RP {
-    margin: auto;
-}
+    .icon-ratting-RP {
+        margin: auto;
+    }
 
-.text-prd {
-    padding-top: 10px;
-    padding-left: 50px;
+    .text-prd {
+        padding-top: 10px;
+        padding-left: 50px;
+    }
 }
 
 /* div4 */
-#div4 {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-left: 100px;
-    height: 480px;
-}
-
-.div4-r1 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.div4-r2 {
-    margin-top: -10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.div4-r3 {
-    padding-top: 20px;
-    display: flex;
-}
-
-.r3-left {
-    width: 740px;
-    /* 50% độ dài màn hình */
-    display: flex;
-    align-items: center;
-}
-
-.r3-right {
-    width: 740px;
-    /* 50% độ dài màn hình */
-    display: flex;
-    align-items: center;
-}
-
-.r3-left-text {
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.rlt-1 {
-    color: #6DBDFB;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.rlt-2 {
-    margin-top: -10px;
-    width: 450px;
-    font-size: 20px;
-}
-
-#fast-delivery-img img {
-    transition: transform 1s;
-}
-
-#fast-delivery-img img:hover {
-    transform: translateX(70%);
-}
-
-#best-quality-img img {
-    transition: transform 0.2s ease-in-out;
-}
-
-#best-quality-img img:hover {
-    transform: scale(1.2);
-}
-
-#FS-SP:hover img {
-    animation: shake 0.5s;
-}
-
-@keyframes shake {
-
-    10%,
-    90% {
-        transform: translate3d(-1px, 0, 0);
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #div4 {
+        height: auto;
+        padding: 10px;
     }
 
-    20%,
-    80% {
-        transform: translate3d(2px, 0, 0);
-        /* di chuyển phần tử sang phải 2px.còn lại tương tự */
+    .div4-r1 {
+        font-size: 20px;
+        font-weight: bold;
     }
 
-    30%,
-    50%,
-    70% {
-        transform: translate3d(-4px, 0, 0);
+    .div4-r2 {
+        font-size: 12px;
     }
 
-    40%,
-    60% {
-        transform: translate3d(4px, 0, 0);
+    .div4-r3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .r3-left,
+    .r3-right {
+        width: 100%;
+    }
+
+    .r3-left-text {
+        padding-left: 0;
+    }
+
+    .rlt-1 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+
+    .rlt-2 {
+        font-size: 12px;
     }
 }
 
+@media (min-width: 577px) and (max-width: 768px) {
+    #div4 {
+        height: auto;
+        padding: 10px;
+    }
+
+    .div4-r1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .div4-r2 {
+        font-size: 18px;
+    }
+
+    .div4-r3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .r3-left,
+    .r3-right {
+        width: 100%;
+    }
+
+    .r3-left-text {
+        padding-left: 0;
+    }
+
+    .rlt-1 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+
+    .rlt-2 {
+        font-size: 12px;
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) {
+    #div4 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left: 100px;
+        height: 480px;
+    }
+
+    .div4-r1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .div4-r2 {
+        margin-top: -10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .div4-r3 {
+        padding-top: 20px;
+        display: flex;
+    }
+
+    .r3-left {
+        width: 740px;
+        /* 50% độ dài màn hình */
+        display: flex;
+        align-items: center;
+    }
+
+    .r3-right {
+        width: 740px;
+        /* 50% độ dài màn hình */
+        display: flex;
+        align-items: center;
+    }
+
+    .r3-left-text {
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .rlt-1 {
+        color: #6DBDFB;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .rlt-2 {
+        margin-top: -10px;
+        width: 450px;
+        font-size: 20px;
+    }
+
+    #fast-delivery-img img {
+        transition: transform 1s;
+    }
+
+    #fast-delivery-img img:hover {
+        transform: translateX(70%);
+    }
+
+    #best-quality-img img {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    #best-quality-img img:hover {
+        transform: scale(1.2);
+    }
+
+    #FS-SP:hover img {
+        animation: shake 0.5s;
+    }
+
+    @keyframes shake {
+
+        10%,
+        90% {
+            transform: translate3d(-1px, 0, 0);
+        }
+
+        20%,
+        80% {
+            transform: translate3d(2px, 0, 0);
+            /* di chuyển phần tử sang phải 2px.còn lại tương tự */
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translate3d(-4px, 0, 0);
+        }
+
+        40%,
+        60% {
+            transform: translate3d(4px, 0, 0);
+        }
+    }
+}
 
 /* div5 */
 #div5 {
@@ -773,6 +1038,7 @@
 .div5-1 img:hover {
     transform: scale(1.2);
 }
+
 /* Iphone 12 pro */
 @media (max-width: 576px) {
     #div5 {
