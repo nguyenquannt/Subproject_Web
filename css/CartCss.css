@@ -2,10 +2,10 @@
     background-color: #6DBDFB;
     height: 80px;
 }
+
 #menu {
     position: absolute;
     top: 0;
-    /* left: 0; */
     width: 650px;
     height: 55px;
     border-radius: 10px;
@@ -40,6 +40,63 @@ a.text-menu:hover {
     border: 2px solid #cad2df;
     text-decoration: none;
 }
+
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #header {
+        height: auto;
+    }
+
+    #nameshop {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #menu {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -15px;
+    }
+
+    a.text-menu {
+        margin-bottom: -15px;
+    }
+
+    .col-6.d-flex.justify-content-around {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    #div-lang {
+        margin-top: -20px;
+    }
+
+    img.m-auto {
+        margin-right: 5px;
+    }
+}
+
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #menu {
+        left: -2%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 3%;
+    }
+
+    .col-6 d-flex justify-content-around {
+        display: flex;
+        justify-content: flex-start;
+        /* margin-top: -100px; */
+    }
+}
+
 /* logo */
 #logo {
     height: 150px;
@@ -75,6 +132,93 @@ a.text-menu:hover {
     border: 0px;
     font-weight: bold;
 }
+
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #logo {
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #logoimg {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    #txtcart {
+        font-size: 24px;
+        padding-left: 10px;
+        padding-top: 10px;
+        text-align: center;
+        color: #6DBDFB;
+        font-weight: bold;
+    }
+
+    #inputsearch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    #input {
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -10%;
+    }
+
+    #buttonS {
+        width: auto;
+        height: 30px;
+        background-color: #6DBDFB;
+        color: white;
+        border-radius: 5px;
+        border: 0px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #logo {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #logoimg {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        position: static;
+    }
+
+    #txtcart {
+        font-size: 20px;
+        padding: 20px 0 10px;
+        text-align: center;
+    }
+
+    #input {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #buttonS {
+        width: 100%;
+        max-width: 150px;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
 
 /* product */
 .cart-item {
@@ -115,14 +259,13 @@ a.text-menu:hover {
 .cart-item-price {
     margin-left: 4vh;
 }
+
 .cart-item-price {
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
     color: red;
-  }
-  
-
+}
 
 .cart-item-quantity:after {
     content: "Price";
@@ -194,30 +337,187 @@ a.text-menu:hover {
     background-color: #ff6347;
     color: #fff;
 }
-/* test */
+
+/* Nhấp nhảy sản phẩm */
 @keyframes blink {
-    0% { background-color: #fff; }
-    50% { background-color: #ffff00; }
-    100% { background-color: #fff; }
-  }
-  
-  .blink {
+    0% {
+        background-color: #fff;
+    }
+
+    50% {
+        background-color: #ffff00;
+    }
+
+    100% {
+        background-color: #fff;
+    }
+}
+
+.blink {
     animation: blink 1s infinite;
-  }
-  
+}
+
+/* đầu */
+.cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+}
+
+.cart-item img {
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+    margin-left: 40px;
+    border: 1px solid gray;
+}
+
+.cart-item-info {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-item-name {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: -40px;
+    padding-left: 30px;
+    font-size: 18px;
+    color: #6DBDFB;
+}
+
+.cart-item-quantity,
+.cart-item-price {
+    margin-left: 4vh;
+}
+
+.cart-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: red;
+}
+
+/* Iphone 12 pro */
+@media only screen and (max-width: 576px) {
+    .cart-item {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+        align-items: center;
+    }
+
+    .cart-item img {
+        margin: 0;
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .cart-item-info {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .cart-item-quantity,
+    .cart-item-price {
+        margin: 5px 0;
+    }
+
+    .cart-item-name {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .minus-button,
+    .cart-item-quantity-button {
+        margin: 0 5px;
+    }
+}
+
+/*IPad mini*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .cart-item img {
+        margin-left: 0;
+    }
+
+    .cart-item-name {
+        padding-left: 0;
+    }
+}
+
 
 /* footer */
-#footer {
-    margin-left: -15px;
-    width: 1480px;
-    height: 63vh;
+@media (min-width: 769px) {
+    #footer {
+        margin-left: -15px;
+        width: 1480px;
+        height: 63vh;
+    }
+
+    .ip {
+        width: 275px;
+        height: 50px;
+    }
+
+    .end {
+        margin-top: -70px;
+    }
 }
 
-.ip {
-    width: 275px;
-    height: 50px;
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #div1,
+    #div2,
+    #div3 {
+        width: 100%;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    #div4 {
+        width: 100%;
+        justify-content: left;
+    }
 }
 
-.end {
-    margin-top: -70px;
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #div1,
+    #div2,
+    #div3 {
+        width: 33.33%;
+        margin-bottom: 20px;
+    }
+
+    #div2 {
+        left: 10%;
+    }
+
+    #div3 {
+        left: -8%;
+    }
+
+    #div4 {
+        left: -8%;
+    }
 }

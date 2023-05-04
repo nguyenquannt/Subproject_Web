@@ -135,6 +135,9 @@ document.getElementById("buttonS").addEventListener("click", function () {
             productItems[i].classList.add("blink");
             console.log("Tìm thấy sản phẩm");
             found = true;
+            setTimeout(function(){
+                productItems[i].classList.remove("blink");
+            }, 1000);
             break;
         }
     }
