@@ -1,196 +1,549 @@
+/* Head */
 #con {
-    width: 1480px;
+    width: 100%;
 }
 
-/* menu */
-#menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 650px;
-    height: 55px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 9999;
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #menu {
+        position: absolute;
+        z-index: 999;
+        left: 30%;
+        top: 15%;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    a.text-menu {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 0;
+        font-weight: bold;
+        color: white;
+    }
+
+    #banner {
+        width: 100%;
+        margin-left: 0;
+        position: relative;
+    }
+
+    .logo {
+        width: 80px;
+        height: auto;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+    }
 }
 
-.text-menu {
-    text-decoration: none;
-    color: whitesmoke;
-    font-weight: bold;
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #banner {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        max-width: 20%;
+        height: auto;
+        position: absolute;
+        margin-top: -48%;
+    }
+
+    #menu {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+
+    a.text-menu {
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        margin-right: 5%;
+    }
+
+    #con {
+        padding: 0 10px;
+    }
 }
 
-a.text-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
-    text-align: center;
+/* laptop */
+@media (min-width: 769px) {
+    #con {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #menu {
+        position: absolute;
+        top: 5%;
+        right: 0;
+        width: 40%;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .text-menu {
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+
+    a.text-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    a.text-menu:hover {
+        background-color: #cad2df;
+        color: #252525;
+        width: 100px;
+        border: 2px solid #cad2df;
+        text-decoration: none;
+    }
+
+    #banner {
+        width: 100% margin-left: -14px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 80px;
+        position: absolute;
+        margin-top: -280px;
+        margin-left: 20px;
+    }
 }
 
-a.text-menu:hover {
-    background-color: #cad2df;
-    color: #252525;
-    width: 100px;
-    border: 2px solid #cad2df;
-    text-decoration: none;
-}
-
-/* banner */
-#banner {
-    width: 1480px;
-    margin-left: -14px;
-}
-
-.logo {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    margin-top: -280px;
-    margin-left: 20px;
-}
-
-/* list product 1 */
-#product-list {
-    background-color: #6DBDFB;
-    height: 400px;
-}
-
-#pd1 {
-    width: 270px;
-    height: 350px;
-    border: 1px solid gray;
-    background-color: #C1DCF9;
-    border-radius: 20px;
-}
-
-.money-product {
-    margin-top: -10px;
-    font-size: 25px;
-}
-
-#prev-next-list1 {
-    top: 520px;
-    margin-left: -10px;
-    width: 1470px;
-}
-
-.btn-l1 {
-    width: 40px;
+/* List product 1 */
+#title-list-product {
     height: 40px;
-    border-radius: 30%;
-    background-color: #F2D8B9;
 }
 
-/* list2 */
-#product-list2 {
-    background-color: #6DBDFB;
-    height: 400px;
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #title-list-product {
+        width: 400%;
+        height: auto;
+    }
+
+    #product-list {
+        width: 100%;
+        background-color: #6DBDFB;
+        height: auto;
+    }
+
+    #pd1 {
+        width: 170px;
+        height: 300px;
+        border: 1px solid gray;
+        background-color: #C1DCF9;
+        border-radius: 20px;
+    }
+
+    .pt-3 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .money-product {
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    #prev-next-list1 {
+        top: 75%;
+        margin-left: -10px;
+        width: 100%
+    }
+
+    .btn-l1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        background-color: #F2D8B9;
+    }
 }
 
-#pd2 {
-    width: 270px;
-    height: 350px;
-    border: 1px solid gray;
-    background-color: #C1DCF9;
-    border-radius: 20px;
-    position: relative;
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #product-list {
+        width: 100%;
+        background-color: #6DBDFB;
+        height: auto;
+    }
+
+    #pd1 {
+        width: 270px;
+        height: 350px;
+        border: 1px solid gray;
+        background-color: #C1DCF9;
+        border-radius: 20px;
+    }
+
+    .money-product {
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    #prev-next-list1 {
+        top: 75%;
+        margin-left: -10px;
+        width: 100%
+    }
+
+    .btn-l1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        background-color: #F2D8B9;
+    }
 }
 
-#prev-next-list2 {
-    top: 1000px;
-    margin-left: -10px;
-    width: 1470px;
+/* laptop */
+@media (min-width: 769px) {
+    #product-list {
+        width: 100%;
+        background-color: #6DBDFB;
+        height: auto;
+    }
+
+    #pd1 {
+        width: 270px;
+        height: 350px;
+        border: 1px solid gray;
+        background-color: #C1DCF9;
+        border-radius: 20px;
+    }
+
+    .money-product {
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    #prev-next-list1 {
+        top: 520px;
+        margin-left: -10px;
+        width: 1470px;
+    }
+
+    .btn-l1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        background-color: #F2D8B9;
+    }
 }
-/* phóng to sản phẩm */
+
+/* list product 2*/
 #pd2:hover img {
     transform: scale(1.2);
 }
+
 #pd1:hover img {
     transform: scale(1.2);
 }
-/* box text */
-/* #pd2-overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 2;
-    text-align: center;
-    padding-top: 60px; 
+
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #title-list-product {
+        width: 400%;
+        height: auto;
+    }
+
+    #product-list2 {
+        width: 100%;
+        background-color: #6DBDFB;
+        height: auto;
+    }
+
+    #pd2 {
+        width: 170px;
+        height: 300px;
+        border: 1px solid gray;
+        background-color: #C1DCF9;
+        border-radius: 20px;
+    }
+
+    .pt-3 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .money-product {
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    #prev-next-list2 {
+        top: 75%;
+        margin-left: -10px;
+        width: 100%
+    }
+
+    .btn-l2 {
+        margin-top: 80vh;
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        background-color: #F2D8B9;
+    }
 }
 
-.pd2-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background-color: rgba(156 156 156, 0.9);
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #title-list-product {
+        width: 200%;
+        height: auto;
+    }
+
+    #product-list2 {
+        width: 100%;
+        background-color: #6DBDFB;
+        height: auto;
+    }
+
+    #pd2 {
+        width: 270px;
+        height: 350px;
+        border: 1px solid gray;
+        background-color: #C1DCF9;
+        border-radius: 20px;
+    }
+
+    .money-product {
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    #prev-next-list2 {
+        top: 75%;
+        margin-left: -10px;
+        width: 100%
+    }
+
+    .btn-l2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        background-color: #F2D8B9;
+        margin-top: 100%;
+    }
 }
 
-.pd2-overlay-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.2rem;
-} */
-/*  */
-.btn-l2 {
-    width: 40px;
-    height: 40px;
-    border-radius: 30%;
-    background-color: #F2D8B9;
+/* laptop */
+@media (min-width: 769px) {
+    #product-list2 {
+        width: 100%;
+        background-color: #6DBDFB;
+        height: auto;
+    }
+
+    #pd2 {
+        width: 270px;
+        height: 350px;
+        border: 1px solid gray;
+        background-color: #C1DCF9;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    #prev-next-list2 {
+        top: 185vh;
+        margin-left: -10px;
+        width: 1470px;
+    }
+
+    .btn-l2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        background-color: #F2D8B9;
+        margin-top: -50vh;
+    }
 }
 
-/* icon cart */
-#icon-cart {
-    position: fixed;
-    top: 50%;
-    left: 95%;
+/*Cart */
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #icon-cart {
+        width: 100%;
+        position: fixed;
+        top: 6%;
+        left: 2%;
+    }
+
+    #cart-sgv {
+        width: 35px;
+        height: 35px;
+    }
+
+    #cart-count {
+        position: absolute;
+        font-weight: bold;
+        background-color: red;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        color: black;
+        margin-top: 4px;
+        left: 30px;
+    }
 }
 
-#cart-sgv {
-    position: absolute;
-    width: 50px;
-    height: 50px;
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #icon-cart {
+        width: 100%;
+        position: fixed;
+        top: 16%;
+        left: 2%;
+    }
+
+    #cart-sgv {
+        width: 35px;
+        height: 35px;
+    }
+
+    #cart-count {
+        position: absolute;
+        font-weight: bold;
+        background-color: red;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        color: black;
+        margin-top: 4px;
+        left: 30px;
+    }
 }
 
-#cart-count {
-    position: absolute;
-    font-weight: bold;
-    background-color: red;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
-    text-align: center;
-    color: black;
-    margin-top: 4px;
-    left: 30px;
+/* laptop */
+@media (min-width: 769px) {
+    #icon-cart {
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 90%;
+    }
+
+    #cart-sgv {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    #cart-count {
+        position: absolute;
+        font-weight: bold;
+        background-color: red;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        text-align: center;
+        color: black;
+        margin-top: 4px;
+        left: 30px;
+    }
 }
 
 /* footer */
-#footer {
-    margin-left: -15px;
-    width: 1480px;
-    height: 300px;
+@media (min-width: 769px) {
+    #footer {
+        margin-left: -15px;
+        width: 1480px;
+        height: 63vh;
+    }
+
+    .ip {
+        width: 275px;
+        height: 50px;
+    }
+
+    .end {
+        margin-top: -70px;
+    }
 }
 
-.ip {
-    width: 275px;
-    height: 50px;
+/* Iphone 12 pro */
+@media (max-width: 576px) {
+    #footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #div1,
+    #div2,
+    #div3 {
+        width: 100%;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    #div4 {
+        width: 100%;
+        justify-content: left;
+    }
 }
 
-.end {
-    margin-top: -70px;
+/* Ipad mini */
+@media (min-width: 577px) and (max-width: 768px) {
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #div1,
+    #div2,
+    #div3 {
+        width: 33.33%;
+        margin-bottom: 20px;
+    }
+
+    #div2 {
+        left: 10%;
+    }
+
+    #div3 {
+        left: -8%;
+    }
+
+    #div4 {
+        left: -8%;
+    }
 }
