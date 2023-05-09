@@ -17,7 +17,7 @@ cartItems.forEach((item) => {
             quantity: 1,
         });
     }
-    
+
     // Tạo phần tử HTML để hiển thị thông tin sản phẩm
     const cartItem = document.createElement("div");
     cartItem.classList.add("cart-item");

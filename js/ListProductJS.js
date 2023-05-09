@@ -79,7 +79,8 @@ addToCartButtons.forEach((button) => {
     button.addEventListener('click', () => {
         const productName = button.parentNode.querySelector('.name-pd').textContent;
         const productPrice = parseInt(button.parentNode.querySelector('.money-product').textContent);
-        const productImage = `image-${imageCount}.png`; // tên ảnh sản phẩm
+        // const productImage = `image-${imageCount}.png`; // tên ảnh sản phẩm
+        const productImage = button.dataset.image;
         imageCount++;
 
         let foundItem = false;
